@@ -1294,9 +1294,9 @@
                 // Create downloadable content with better formatting
                 const content = `
 ╔══════════════════════════════════════════════════════════════════════════╗
-║                NATIONAL UNIVERSITY OF MODERN LANGUAGES                   ║
-║                          RAWALPINDI CAMPUS                               ║
-║                   STUDENT SKILLS ASSESSMENT SUMMARY                      ║
+                NATIONAL UNIVERSITY OF MODERN LANGUAGES                    
+                           RAWALPINDI CAMPUS                                
+                   STUDENT SKILLS ASSESSMENT SUMMARY                     
 ╚══════════════════════════════════════════════════════════════════════════╝
 
 ────────────────────────────────────────────────────────────────────────────
@@ -1320,7 +1320,7 @@
                          ASSESSMENT RESPONSES
 ────────────────────────────────────────────────────────────────────────────
 ${Object.entries(responses).map(([question, answer]) => {
-    const answerIcon = (answer === 'Strongly Agree' || answer === 'Agree') ? '&#10004;' : '&#10006;';
+    const answerIcon = (answer === 'Strongly Agree' || answer === 'Agree') ? '✔️' : '❌';
     return `${question}: ${answerIcon} ${answer}`;
 }).join('\n')}
 
